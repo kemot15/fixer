@@ -1,16 +1,19 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Tommy
-  Date: 2019-09-12
-  Time: 11:33
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <form action="/fixer" method="post">
+    <input type="text" name="amount">
+    <select name="symbols">
+      <option value="USD">Dolar</option>
+      <option value="EUR">Euro</option>
+      <option value="CHF">Frank</option>
+    </select>
+    <input type="date" name="date">
+    <input value="Wyslij" type="submit">
+  </form>
+</body>
 </html>
